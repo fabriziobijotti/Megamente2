@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siga Megamente</title>
+    <link rel="stylesheet" href="../MegaMente/estilos/estilo_form.css">
+</head>
+<body>
+    <main class="main">
+        <div class="form-page">
+      <h1 class="form-page__title max-width-300">Conteúdo Grátis: E-book!</h1>
+    
+      <ul class="form-page__list top-40">
+        <li>Aprender programação é como se tornar fluente em uma linguagem universal que conecta pessoas e ideias no mundo digital;</li>
+        <li>Desvendar os mistérios da programação é como descobrir um novo universo de possibilidades e criatividade;</li>
+        <li>Aprender programação é como adquirir a chave que abre as portas para o futuro da inovação e do progresso tecnológico.</li>
+      </ul>
+    
+      <form action="/salvarDados" method="post" id="controlelead" class="form-page__form landing" autocomplete="off">
+        <input type="hidden" id="campaing" name="campaing" value="controlelead" />
+        <input type="hidden" id="description" name="description" value="Recebeu conteúdo: E-book." />
+    
+        <div class="form-page__form__input">
+          <label class="label" for="email">Seu melhor e-mail</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-page__form__input">
+          <label class="label" for="name">Nome</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-page__form__input">
+          <label class="label" for="phone">Telefone</label>
+          <input type="tel" name="phone" id="phone" class="phone-mask" autocomplete="chrome-off">
+        </div>
+    
+        <div style="padding-bottom: 20px;">
+          <input type="checkbox" id="LGPD" name="LGPD" onclick="change()" checked>
+          <label class="LGPD" for="LGPD">Eu concordo com as <a href="https://policies.google.com/terms?hl=pt-BR" style="color: black;">políticas e termos de uso.</a></label>
+        </div>
+    
+        <button type="submit" value="Salvar" class="submit">
+          Receber grátis
+          <progress class="linear-loading inverted" />
+        </button>
+      </form>
+    </div>
+      </main>
+    
+    <footer class="rodape"> <p>Desenvolvido por Otecnico.org</p> </footer>
+</body>
+</html>
